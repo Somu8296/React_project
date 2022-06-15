@@ -1,0 +1,53 @@
+.menu {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.0)), url(../assets/images/listbooks.jpg);
+}
+
+.collections {
+    border-radius: 15px;
+    width: 350px;
+    height: 180px;
+    margin: 20px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+    background: transparent;
+    color: white;
+}
+
+.collections:hover {
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in;
+    cursor: pointer;
+}
+
+.collections div {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.collections button {
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #7e7f85, #4a4c56, #2d303d);
+    height: 40px;
+    width: 150px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 5% 25%;
+}
+
+.collections button:hover {
+    background-position: right;
+}
