@@ -1,0 +1,27 @@
+.footer {
+    background-color: yellow;
+    color: black;
+    padding: 8px 0px;
+    text-align: center;
+    border-bottom: 10px;
+}
+
+ul li {
+    display: inline-block;
+    margin: 0px 20px;
+}
+
+.footer li {
+    list-style: none;
+}
+
+ul a:hover {
+    background-color: #ef5425;
+    border-radius: 5px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+li a {
+    text-decoration: none;
+}

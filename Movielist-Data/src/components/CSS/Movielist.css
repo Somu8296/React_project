@@ -1,0 +1,187 @@
+.collection {
+    display: flex;
+    background-color: white;
+    color: black;
+    width: 80%;
+    border-bottom: 3px solid gainsboro;
+    padding: 10px 16px;
+    border-radius: 25px;
+    padding: 10px 16px;
+    margin: 20px 0px;
+    justify-content: left;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: 80%;
+    margin-left: 80px;
+    position: relative;
+}
+
+.collection:hover {
+    box-shadow: 10px 10px 10px grey;
+    border-left: 5px solid gainsboro;
+    background-color: lavender;
+    cursor: pointer;
+}
+
+.collection h2 {
+    margin-bottom: 8px;
+    color: black;
+}
+
+.collection.synopsis {
+    display: none;
+}
+
+.info {
+    width: 90%;
+}
+
+.synopsis {
+    display: none;
+    width: 70%;
+    /* visibility: hidden; */
+}
+
+.Button {
+    background-color: #ef5425;
+    color: aliceblue;
+    border: none;
+    margin: 2%;
+    padding: 5px 30px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.collection:hover .synopsis {
+    display: block;
+    /* visibility: visible; */
+    cursor: pointer;
+}
+
+.collection .info {
+    text-align: left;
+}
+
+.poster {
+    position: absolute;
+    right: 2%;
+}
+
+img {
+    border-radius: 5px;
+
+}
+
+
+
+
+
+
+@media all and (max-width:600px) {
+    .collection .Info h1 {
+        /* display: none; */
+    }
+
+    .poster {
+        visibility: hidden;
+    }
+
+    .poster:hover {
+        visibility: visible;
+    }
+
+    .collection:hover {
+        visibility: visible;
+    }
+
+    .synopsis {
+        width: 100%;
+    }
+
+}
+
+
+
+/* .contact {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+} */
+
+/* .contact .leftSide {
+    height: 50%;
+    flex: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+/* .contact .rightSide {
+    height: 50%;
+    flex: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+/* .contact .rightSide h1 {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    font-weight: 10;
+    font-size: 50px;
+    margin-left: 30px;
+} */
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    padding: 20px;
+}
+
+form input {
+    height: 20px;
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid #121619;
+    color: black;
+}
+
+form textarea {
+    margin-top: 15px;
+    height: 40px;
+    width: 40%;
+    border: none;
+    border-bottom: 1px solid #121619;
+    color: black;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-weight: bold;
+    /* color: black; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form input:focus,
+textarea:focus {
+    outline: none;
+}
+
+
+
+form label {
+    position: relative;
+    left: 2%;
+    color: grey;
+}
+
+form button {
+    margin-top: 40px;
+    width: 140px;
+    height: 40px;
+    border: none;
+    background-color: #121619;
+    color: whitesmoke;
+    font-size: 15px;
+    cursor: pointer;
+}
